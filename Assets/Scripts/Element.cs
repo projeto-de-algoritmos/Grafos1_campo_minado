@@ -17,6 +17,9 @@ public class Element : MonoBehaviour
     [SerializeField]
     private Sprite mineTexture; // Mine texture
 
+    [SerializeField]
+    private Sprite defaultTexture;
+
     private AudioSource playSound;
 
     // Start is called before the first frame update
@@ -54,6 +57,11 @@ public class Element : MonoBehaviour
         }
     }
 
+
+    public void RestartDefault(){
+        GetComponent<SpriteRenderer>().sprite = defaultTexture;
+    }
+
     private void OnMouseUpAsButton()
     {       
 
@@ -65,7 +73,7 @@ public class Element : MonoBehaviour
             playSound.clip = audioBomb;
             playSound.Play();
             this.LoadTexture(0);
-            print("Game Over!!!");
+            //print("Game Over!!!");
             GameController.UncoverMines();
             GameController.GameState = "Game Over";
         }
@@ -89,7 +97,7 @@ public class Element : MonoBehaviour
 
             if(GameController.IsFinished())
             {
-                print("You Win!!!");
+                //print("You Win!!!");
                 GameController.GameState = "Win";
             }
         }

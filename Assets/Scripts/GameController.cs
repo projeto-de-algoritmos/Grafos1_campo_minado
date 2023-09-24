@@ -3,9 +3,19 @@ using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class GameController : MonoBehaviour
 {
+    [SerializeField]
+    Image Menu;
+    [SerializeField]
+    private Text msgGameOver;
+    [SerializeField]
+    private Text msgCamp;
+    [SerializeField]
+    private Text msgSpace;
     [SerializeField] // SerializeField makes private variables visible in the inspector
     private GameObject block; // Prefab of the block
     [SerializeField] // SerializeField makes private variables visible in the inspector
@@ -18,17 +28,55 @@ public class GameController : MonoBehaviour
 
     public static Element[,] elements = new Element[gridWidth, gridHeight]; // Array of elements
     public static string GameState; //Stop, GameOver, Win, Play
+    private AudioSource playSound;
     // Start is called before the first frame update
     void Start()
     {
         this.CreateField();
-        GameController.GameState = "Play";
+        GameController.GameState = "Stop";
+        playSound = gameObject.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
     void Update()
     {
         
+        if (GameController.GameState == "Game Over"){
+            Menu.enabled = true;
+            msgGameOver.gameObject.active = true;
+            msgGameOver.text="Game Over!!!";
+            GameController.GameState = "Stop";
+            playSound.clip = audioGameOver;
+            playSound.Play();
+            print("Game Over!!!");
+        }
+         if (GameController.GameState == "Win"){
+            Menu.enabled = true;
+            msgGameOver.gameObject.active = true;
+            msgGameOver.text="Wim!!!";
+            GameController.GameState = "Stop";
+            playSound.clip = audioWin;
+            playSound.Play();
+            print("Win!!!");
+         }
+         if (GameController.GameState == "Stop"){
+            msgCamp.gameObject.active = true;
+            msgSpace.gameObject.active = true;
+            if (Input.GetKeyDown(KeyCode.Space)){
+                StartGame();
+            }
+         }
+    }
+   
+    private void StartGame(){
+        Menu.enabled = false;
+        msgSpace.gameObject.active = false;
+        msgCamp.gameObject.active = false;
+        msgGameOver.gameObject.active = false;
+        foreach (Element item in elements){
+            item.RestartDefault();
+        }
+        GameController.GameState = "Play";
     }
 
     // Create the mine field

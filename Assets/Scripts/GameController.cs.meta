@@ -3,7 +3,10 @@ guid: 4921aa0122eca9d5ea12163bddcb40f2
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - block: {instanceID: 0}
+  - audioWin: {fileID: 8300000, guid: bdf13f55b396da833b62f02e5c46f362, type: 3}
+  - audioGameOver: {fileID: 8300000, guid: ffd1b4be117cb033da859b01d1244e6e, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

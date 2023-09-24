@@ -158,6 +158,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 917a07294c4ba58d18f4fcf0f97ff01d, type: 3}
   - {fileID: 21300000, guid: 8cac056c25ab1abc0a3536ebc38fe701, type: 3}
   mineTexture: {fileID: 21300000, guid: 17678305e052d869cac91d2329d3985d, type: 3}
+  defaultTexture: {fileID: 21300000, guid: 64048d364ca8299dbb323ec8664a075a, type: 3}
 --- !u!82 &3477735205142847589
 AudioSource:
   m_ObjectHideFlags: 0
