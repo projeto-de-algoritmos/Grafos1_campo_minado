@@ -245,6 +245,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   block: {fileID: 7186195797982195882, guid: 565b63fee678932d586d37b62b66af18, type: 3}
+  audioWin: {fileID: 0}
+  audioGameOver: {fileID: 0}
 --- !u!4 &1788224686
 Transform:
   m_ObjectHideFlags: 0

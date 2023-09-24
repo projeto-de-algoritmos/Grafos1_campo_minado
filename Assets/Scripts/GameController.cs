@@ -8,6 +8,10 @@ public class GameController : MonoBehaviour
 {
     [SerializeField] // SerializeField makes private variables visible in the inspector
     private GameObject block; // Prefab of the block
+    [SerializeField] // SerializeField makes private variables visible in the inspector
+    private AudioClip audioWin;
+    [SerializeField] 
+    private AudioClip audioGameOver;
 
     public static int gridWidth = 10;
     public static int gridHeight = 13;

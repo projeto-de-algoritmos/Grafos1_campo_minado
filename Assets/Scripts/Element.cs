@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class Element : MonoBehaviour
 {
+    [SerializeField] // SerializeField makes private variables visible in the inspector
+    private AudioClip audioClick;
+    [SerializeField] 
+    private AudioClip audioBomb;
     [SerializeField]
     private bool mine; // Is this element a mine?
 
@@ -13,9 +17,12 @@ public class Element : MonoBehaviour
     [SerializeField]
     private Sprite mineTexture; // Mine texture
 
+    private AudioSource playSound;
+
     // Start is called before the first frame update
     void Start()
     {
+        playSound = gameObject.GetComponent<AudioSource>();
         mine = Random.value < 0.15; // 15% chance of being a mine
         int x = (int)transform.position.x;
         int y = (int)transform.position.y;
@@ -49,10 +56,14 @@ public class Element : MonoBehaviour
 
     private void OnMouseUpAsButton()
     {       
+
         if (GameController.GameState == "Play"){
+
         if (mine)
         {
             // tela de game over
+            playSound.clip = audioBomb;
+            playSound.Play();
             this.LoadTexture(0);
             print("Game Over!!!");
             GameController.UncoverMines();
@@ -60,6 +71,8 @@ public class Element : MonoBehaviour
         }
         else
         {
+            playSound.clip = audioClick;
+            playSound.Play();
             // lógica proximidade mina
             int x = (int)transform.position.x;
             int y = (int)transform.position.y;
