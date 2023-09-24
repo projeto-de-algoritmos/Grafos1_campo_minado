@@ -48,13 +48,15 @@ public class Element : MonoBehaviour
     }
 
     private void OnMouseUpAsButton()
-    {
+    {       
+        if (GameController.GameState == "Play"){
         if (mine)
         {
             // tela de game over
             this.LoadTexture(0);
             print("Game Over!!!");
             GameController.UncoverMines();
+            GameController.GameState = "Game Over";
         }
         else
         {
@@ -75,7 +77,9 @@ public class Element : MonoBehaviour
             if(GameController.IsFinished())
             {
                 print("You Win!!!");
+                GameController.GameState = "Win";
             }
+        }
         }
     }
 

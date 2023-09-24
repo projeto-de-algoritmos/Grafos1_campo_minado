@@ -13,11 +13,12 @@ public class GameController : MonoBehaviour
     public static int gridHeight = 13;
 
     public static Element[,] elements = new Element[gridWidth, gridHeight]; // Array of elements
-
+    public static string GameState; //Stop, GameOver, Win, Play
     // Start is called before the first frame update
     void Start()
     {
         this.CreateField();
+        GameController.GameState = "Play";
     }
 
     // Update is called once per frame
