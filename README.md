@@ -14,6 +14,14 @@
 Campo minado é um popular jogo de computador para um jogador. Foi inventado por Robert Donner em 1989 e tem como objetivo revelar um campo de minas sem que alguma seja detonada.
 Escolhemos o projeto pois o campo minado usa o algoritmo flood fill para identificar campos adjacentes sem bombas próximo do campo que foi escolhido pelo jogador, adicionamos um delay, com intuito de evidenciar a execução do algoritmo.
 
+## Vídeo de apresentação
+
+<div>
+<iframe width="560" height="315" src="https://youtu.be/QvxP0LEsCv8" title="Apresentação do trabalho" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
+
+[Link do vídeo](https://youtu.be/QvxP0LEsCv8?si=03f3QC3taY7V_-1b)
 
 
 ## Screenshots
@@ -29,7 +37,7 @@ Fim de jogo:
 
 ## Instalação 
 **Linguagem**: C# <br />
-**Framework**: Para o desenvolvimento foi utilizado o motor gráfico Unity. <br />
+**Framework**: Para o desenvolvimento foi utilizado o ASP.NET com o motor gráfico Unity. <br />
 **Pré-requisitos**: Sistema operacional Windows
 
 ## Uso 
