@@ -34,7 +34,7 @@ Fim de jogo:
 
 ## Uso 
 **Explique como usar seu projeto caso haja algum passo a passo após o comando de execução:** <br />
-No WINDOWS
+No WINDOWS<br />
 Para jogar o campo minado é preciso baixar o diretório CampoMinado.rar <br />
 Após baixar é necessário descompactar a pasta. <br />
 Logo em seguida, abra a pasta Campo Minado e execute o arquivo "Campo Mindado.exe" <br />
