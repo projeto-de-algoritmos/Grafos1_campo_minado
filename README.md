@@ -34,11 +34,11 @@ Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
 
 
 ## Uso 
-**Explique como usar seu projeto caso haja algum passo a passo após o comando de execução:** <br>
-Para jogar o campo minado é preciso baixar o diretorio CampoMinado.rar <br>
-Apos baixar é nescessario descompactar a pasta. <br>
-Logo em seguida, abra a pasta Campo Minado e execute o arquivo "Campo Mindado.exe" <br>
-Agora é so jogar. <br>
+**Explique como usar seu projeto caso haja algum passo a passo após o comando de execução:** <br />
+Para jogar o campo minado é preciso baixar o diretorio CampoMinado.rar <br />
+Apos baixar é nescessario descompactar a pasta. <br />
+Logo em seguida, abra a pasta Campo Minado e execute o arquivo "Campo Mindado.exe" <br />
+Agora é so jogar. <br />
 
 ## Outros 
 Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
