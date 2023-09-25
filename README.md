@@ -11,8 +11,8 @@
 
 
 ## Sobre 
-Campo minado é um popular jogo de computador para um jogador. Foi inventado por Robert Donner em 1989 e tem como objectivo revelar um campo de minas sem que alguma seja detonada.
-Escolhemos o projeto pois o campo minado usa o algoritomo flood fill para identificar campos adjacentes sem bombas proximo do campo que foi escolido pelo jogador, adicionamos um delay, com intuido de evidenciar a execução do algiritimo.
+Campo minado é um popular jogo de computador para um jogador. Foi inventado por Robert Donner em 1989 e tem como objetivo revelar um campo de minas sem que alguma seja detonada.
+Escolhemos o projeto pois o campo minado usa o algoritmo flood fill para identificar campos adjacentes sem bombas próximo do campo que foi escolhido pelo jogador, adicionamos um delay, com intuito de evidenciar a execução do algoritmo.
 
 
 
@@ -20,7 +20,7 @@ Escolhemos o projeto pois o campo minado usa o algoritomo flood fill para identi
 Pagina inicial:
 ![SCR1](https://github.com/projeto-de-algoritmos/CampoMinado/assets/65683663/f9ee1d3f-94de-44cc-8c52-47da75b6781b)
 
-Jogo em funcinamento:
+Jogo em funcionamento:
 ![SRC2](https://github.com/projeto-de-algoritmos/CampoMinado/assets/65683663/2850be17-9d06-4234-b096-a55f9367d6ac)
 
 Fim de jogo:
@@ -29,16 +29,19 @@ Fim de jogo:
 
 ## Instalação 
 **Linguagem**: C# <br />
-**Framework**: Para o desenvolvimento foi ultilizado o motor grafico Unity. <br />
-Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
-
+**Framework**: Para o desenvolvimento foi utilizado o motor gráfico Unity. <br />
+**Pré-requisitos**: Sistema operacional Windows
 
 ## Uso 
 **Explique como usar seu projeto caso haja algum passo a passo após o comando de execução:** <br />
-Para jogar o campo minado é preciso baixar o diretorio CampoMinado.rar <br />
-Apos baixar é nescessario descompactar a pasta. <br />
+No WINDOWS
+Para jogar o campo minado é preciso baixar o diretório CampoMinado.rar <br />
+Após baixar é necessário descompactar a pasta. <br />
 Logo em seguida, abra a pasta Campo Minado e execute o arquivo "Campo Mindado.exe" <br />
-Agora é so jogar. <br />
+Agora é só jogar. <br />
 
 ## Outros 
-Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
+O tamanho do projeto completo é muito grande, não foi possível subir o projeto completo para o git nem com o git lfg. Porém, o projeto completo pode ser encontrado: <br /> 
+https://drive.google.com/drive/u/0/folders/1T8UZzS1lA3Xs61ilINzTvVPaf1rb4GCW
+
+
