@@ -16,7 +16,9 @@ Escolhemos o projeto pois o campo minado usa o algoritmo flood fill para identif
 
 ## Vídeo de apresentação
 
-A execução do programa e explicação da aplicação dos algoritmos e código podem ser vistas no [vídeo de apresentação](https://youtu.be/QvxP0LEsCv8?si=03f3QC3taY7V_-1b).
+
+
+A execução do programa e explicação da aplicação dos algoritmos e código podem ser vistas no [arquivo do vídeo da apresentação, contante dentro desse repositório](https://raw.githubusercontent.com/projeto-de-algoritmos/Grafos1_campo_minado/main/Apresenta%C3%A7%C3%A3o%20-%20Trabalho%201.mp4).
 
 
 ## Screenshots
